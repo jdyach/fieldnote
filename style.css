@@ -1,0 +1,21 @@
+/*
+Theme Name: Fieldnote
+Theme URI: https://github.com/jdyach/fieldnote
+Author: Jacqui Dyach
+Author URI: https://jacquid.com
+Description: A warm, editorial block theme for small studios, freelancers and writers. Built entirely with theme.json, HTML templates, template parts and block patterns: no classic PHP templates. Includes bundled variable fonts, three style variations, section styles, a landing-page template and a library of ready-to-use patterns.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fieldnote
+Tags: blog, portfolio, one-column, wide-blocks, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, style-variations, template-editing, threaded-comments, translation-ready
+*/
+
+/*
+ * Almost all styling lives in theme.json. This file exists for the theme
+ * header above; per-block CSS lives in assets/css/blocks/ and is loaded
+ * only when that block is on the page (see functions.php).
+ */

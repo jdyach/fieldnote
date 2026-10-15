@@ -1,0 +1,19 @@
+{
+	"name": "fieldnote",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Tooling for the Fieldnote WordPress block theme.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"schema:fetch": "node -e \"fetch('https://schemas.wp.org/trunk/theme.json').then(r=>r.text()).then(t=>require('fs').writeFileSync('.theme-json-schema.json',t))\"",
+		"lint:json": "npm run schema:fetch && node bin/validate-theme-json.js .theme-json-schema.json theme.json styles/*.json styles/**/*.json",
+		"zip": "git archive --format=zip --prefix=fieldnote/ -o fieldnote.zip HEAD"
+	},
+	"devDependencies": {
+		"ajv": "^8.17.1",
+		"ajv-formats": "^3.0.1"
+	},
+	"engines": {
+		"node": ">=18"
+	}
+}

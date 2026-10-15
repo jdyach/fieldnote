@@ -1,0 +1,32 @@
+/* Loaded only when a Button block is on the page (see functions.php). */
+.wp-block-button__link {
+	transition:
+		background-color var(--wp--custom--transition),
+		color var(--wp--custom--transition),
+		transform var(--wp--custom--transition);
+}
+
+.wp-block-button__link:hover {
+	transform: translateY(-1px);
+}
+
+/* Core's "Outline" style, tuned to match the theme. */
+.wp-block-button.is-style-outline > .wp-block-button__link {
+	border: 1.5px solid currentColor;
+	background: transparent;
+	color: inherit;
+}
+
+.wp-block-button.is-style-outline > .wp-block-button__link:hover {
+	border-color: var(--wp--preset--color--accent);
+	background: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--base);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wp-block-button__link,
+	.wp-block-button__link:hover {
+		transition: none;
+		transform: none;
+	}
+}
