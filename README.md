@@ -4,6 +4,10 @@ A warm, editorial **WordPress block theme** for small studios, freelancers and w
 
 Fieldnote is built the modern way: every color, font, size and space is defined in `theme.json`, every page layout is an HTML block template, and every section is a reusable block pattern. There are no classic PHP templates (`header.php`, `single.php`, etc.) and no page builder. Site owners can restyle and rearrange the entire site from **Appearance → Editor** without touching code.
 
+[![Try it live in WordPress Playground](https://img.shields.io/badge/Try%20it%20live-WordPress%20Playground-3858e9?logo=wordpress&logoColor=white&style=for-the-badge)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/jdyach/fieldnote/main/_playground/blueprint.json)
+
+The live demo runs a real WordPress site in your browser with the theme and sample content. Open **Appearance → Editor** there to try the style variations and patterns.
+
 ![Fieldnote home page](docs/home-full.jpg)
 
 ## Highlights
@@ -105,6 +109,10 @@ npm run zip                           # installable theme zip (dev files exclude
 For local development, clone this repo straight into `wp-content/themes/fieldnote` (works great with LocalWP).
 
 **Requirements:** WordPress 6.6+, PHP 7.4+. Tested up to WordPress 7.1.
+
+## Related
+
+[Fieldnote Interactive](https://github.com/jdyach/fieldnote-interactive) adds a filterable post grid and a save-for-later reading list to this theme using the WordPress Interactivity API.
 
 ## Credits
 

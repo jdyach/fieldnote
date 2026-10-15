@@ -7,7 +7,8 @@
 	"scripts": {
 		"schema:fetch": "node -e \"fetch('https://schemas.wp.org/trunk/theme.json').then(r=>r.text()).then(t=>require('fs').writeFileSync('.theme-json-schema.json',t))\"",
 		"lint:json": "npm run schema:fetch && node bin/validate-theme-json.js .theme-json-schema.json theme.json styles/*.json styles/**/*.json",
-		"zip": "git archive --format=zip --prefix=fieldnote/ -o fieldnote.zip HEAD"
+		"zip": "git archive --format=zip --prefix=fieldnote/ -o fieldnote.zip HEAD",
+		"blueprint": "node bin/build-blueprint.js"
 	},
 	"devDependencies": {
 		"ajv": "^8.17.1",
